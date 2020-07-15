@@ -1,0 +1,2003 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_054c6e89cb2a4b1aafcb6e49ae20a7f5 {
+                    position: relative;
+                    width: 50.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+             <h3 align="center" style="font-size:20px"><b>Export/Import balance for fossil fuels in 2017</b></h3>
+             
+    
+            <div class="folium-map" id="map_054c6e89cb2a4b1aafcb6e49ae20a7f5" ></div>
+        
+</body>
+<script>    
+    
+            var map_054c6e89cb2a4b1aafcb6e49ae20a7f5 = L.map(
+                "map_054c6e89cb2a4b1aafcb6e49ae20a7f5",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_749331047ea4400cbfd7db39a8ab5ddd = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_054c6e89cb2a4b1aafcb6e49ae20a7f5);
+        
+    
+            var feature_group_0bbba377b01e419aab9db045812a7963 = L.featureGroup(
+                {}
+            ).addTo(map_054c6e89cb2a4b1aafcb6e49ae20a7f5);
+        
+    
+            var circle_marker_ce92656a26424501aede774a66bfea80 = L.circleMarker(
+                [41.000028, 19.9999619],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.400563499208679, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ce92656a26424501aede774a66bfea80.bindTooltip(
+                `<div>
+                     Country: Albania<br>Export: ____1,372,205.0 tonnes<br>Import: ____1,710,575.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0bc22551d0144513900181be459ce3c7 = L.circleMarker(
+                [28.0000272, 2.9999825],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.459155902616464, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_0bc22551d0144513900181be459ce3c7.bindTooltip(
+                `<div>
+                     Country: Algeria<br>Export: ___80,075,365.0 tonnes<br>Import: ____4,265,832.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d58f512251794fe2a27fabbe9a271348 = L.circleMarker(
+                [-11.8775768, 17.5691241],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.077184039195917, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_d58f512251794fe2a27fabbe9a271348.bindTooltip(
+                `<div>
+                     Country: Angola<br>Export: ___94,901,318.0 tonnes<br>Import: ____6,659,132.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_672a893fa15a40ca9342e5b441df266f = L.circleMarker(
+                [-34.9964963, -64.9672817],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.732395447351628, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_672a893fa15a40ca9342e5b441df266f.bindTooltip(
+                `<div>
+                     Country: Argentina<br>Export: ________8,864.0 tonnes<br>Import: ___19,730,199.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b1465bfb4a0b46648d209b6757a6ae04 = L.circleMarker(
+                [40.7696272, 44.6736646],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_b1465bfb4a0b46648d209b6757a6ae04.bindTooltip(
+                `<div>
+                     Country: Armenia<br>Export: ____________nan tonnes<br>Import: ____1,984,601.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7588b483de12404eaad32602e2b4a2ee = L.circleMarker(
+                [-24.7761086, 134.755],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.185916357881302, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_7588b483de12404eaad32602e2b4a2ee.bindTooltip(
+                `<div>
+                     Country: Australia<br>Export: __459,702,890.0 tonnes<br>Import: ___52,284,467.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4272927f327149d7a93c34986a91dd2b = L.circleMarker(
+                [47.2000338, 13.199959],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3847893594639435, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_4272927f327149d7a93c34986a91dd2b.bindTooltip(
+                `<div>
+                     Country: Austria<br>Export: ____7,047,751.0 tonnes<br>Import: ___26,373,832.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60ef998fafa241f1bcdc28b54eec81ad = L.circleMarker(
+                [40.3936294, 47.7872508],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.60507149287811, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_60ef998fafa241f1bcdc28b54eec81ad.bindTooltip(
+                `<div>
+                     Country: Azerbaijan<br>Export: ___52,668,606.0 tonnes<br>Import: ______286,654.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_92ecf7da902d4a258a778c751389b559 = L.circleMarker(
+                [26.1551249, 50.5344606],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.238873769202297, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_92ecf7da902d4a258a778c751389b559.bindTooltip(
+                `<div>
+                     Country: Bahrain<br>Export: ___11,876,764.0 tonnes<br>Import: ____4,043,396.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7856e4e743cc4c3389c99f392c5ce673 = L.circleMarker(
+                [24.4768783, 90.2932426],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.350423583931079, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_7856e4e743cc4c3389c99f392c5ce673.bindTooltip(
+                `<div>
+                     Country: Bangladesh<br>Export: ______101,568.0 tonnes<br>Import: ____7,911,061.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68f7e087b1134e248a676a52db438130 = L.circleMarker(
+                [53.4250605, 27.6971358],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.710986315520102, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_68f7e087b1134e248a676a52db438130.bindTooltip(
+                `<div>
+                     Country: Belarus<br>Export: ___17,996,600.0 tonnes<br>Import: ___39,279,521.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d8a9a741a06940c1a88553ac8cc20da9 = L.circleMarker(
+                [50.6402809, 4.6667145],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.4749300423611995, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_d8a9a741a06940c1a88553ac8cc20da9.bindTooltip(
+                `<div>
+                     Country: Belgium<br>Export: ___31,285,983.0 tonnes<br>Import: ___77,670,440.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3d49bc8aa2e744619cf84e958ee4a888 = L.circleMarker(
+                [9.5293472, 2.2584408],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.313240312354818, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_3d49bc8aa2e744619cf84e958ee4a888.bindTooltip(
+                `<div>
+                     Country: Benin<br>Export: ______260,214.0 tonnes<br>Import: ____2,552,150.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_651cdb4890a9401da996e8df03d2bc71 = L.circleMarker(
+                [-17.0568696, -64.9912286],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.822536130248883, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_651cdb4890a9401da996e8df03d2bc71.bindTooltip(
+                `<div>
+                     Country: Bolivia (Plurinational State of)<br>Export: ___15,353,378.0 tonnes<br>Import: ____1,238,496.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0c865cafb09941eabf130b0ed73e6fc8 = L.circleMarker(
+                [44.3053476, 17.5961467],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.276057040778557, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_0c865cafb09941eabf130b0ed73e6fc8.bindTooltip(
+                `<div>
+                     Country: Bosnia and Herzegovina<br>Export: ______808,543.0 tonnes<br>Import: ____3,749,069.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6bfd5296a31d4a2db9f5905d23784eea = L.circleMarker(
+                [-23.1681782, 24.5928742],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.894085177358009, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_6bfd5296a31d4a2db9f5905d23784eea.bindTooltip(
+                `<div>
+                     Country: Botswana<br>Export: ______249,686.0 tonnes<br>Import: ____1,065,139.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6b5e73df36344466b1f3985ba1165654 = L.circleMarker(
+                [-10.3333333, -53.2],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.45633840657307, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_6b5e73df36344466b1f3985ba1165654.bindTooltip(
+                `<div>
+                     Country: Brazil<br>Export: ___38,551,698.0 tonnes<br>Import: ___80,698,400.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3c88a02e1a2048708b25290aa3c00d9d = L.circleMarker(
+                [4.4137155, 114.5653908],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.713803811563498, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_3c88a02e1a2048708b25290aa3c00d9d.bindTooltip(
+                `<div>
+                     Country: Brunei Darussalam<br>Export: ___10,883,512.0 tonnes<br>Import: ______461,668.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a6edc843592248848bc57f89ec2abf14 = L.circleMarker(
+                [42.6073975, 25.4856617],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.347606087887684, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_a6edc843592248848bc57f89ec2abf14.bindTooltip(
+                `<div>
+                     Country: Bulgaria<br>Export: ____4,672,040.0 tonnes<br>Import: ___11,530,403.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dde93fc0978e4b779325c45ffde5d833 = L.circleMarker(
+                [13.5066394, 104.869423],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_dde93fc0978e4b779325c45ffde5d833.bindTooltip(
+                `<div>
+                     Country: Cambodia<br>Export: ____________nan tonnes<br>Import: ____3,958,743.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a555e46828a544b685bb329f92fe40f5 = L.circleMarker(
+                [4.6125522, 13.1535811],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.801126998417358, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_a555e46828a544b685bb329f92fe40f5.bindTooltip(
+                `<div>
+                     Country: Cameroon<br>Export: ____3,442,625.0 tonnes<br>Import: ____2,198,839.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ca1b43a397b54ec9b4ddf0d0d48a1807 = L.circleMarker(
+                [61.0666922, -107.9917071],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.002817496043395, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ca1b43a397b54ec9b4ddf0d0d48a1807.bindTooltip(
+                `<div>
+                     Country: Canada<br>Export: __280,114,560.0 tonnes<br>Import: ___82,367,424.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_68a3053dad554873b91e83e9d686dcf7 = L.circleMarker(
+                [-31.7613365, -71.3187697],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.331831948142948, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_68a3053dad554873b91e83e9d686dcf7.bindTooltip(
+                `<div>
+                     Country: Chile<br>Export: ____1,715,726.0 tonnes<br>Import: ___30,434,011.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f2070e685723430f9016ab02022e5d37 = L.circleMarker(
+                [35.000074, 104.999927],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.331831948142948, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_f2070e685723430f9016ab02022e5d37.bindTooltip(
+                `<div>
+                     Country: China<br>Export: ___40,425,847.0 tonnes<br>Import: __720,382,829.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_59a930fd2d2f4f1b8e6ed7d302626b73 = L.circleMarker(
+                [2.8894434, -73.783892],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.713803811563498, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_59a930fd2d2f4f1b8e6ed7d302626b73.bindTooltip(
+                `<div>
+                     Country: Colombia<br>Export: __132,700,223.0 tonnes<br>Import: ____5,432,729.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cb976085de88499ba9fe0b2ca87624d2 = L.circleMarker(
+                [-0.7264327, 15.6419155],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.96845172051053, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_cb976085de88499ba9fe0b2ca87624d2.bindTooltip(
+                `<div>
+                     Country: Congo<br>Export: ___13,002,382.0 tonnes<br>Import: ______395,068.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ebabf6ccf8ad418e8395cc2fa552bed6 = L.circleMarker(
+                [10.2735633, -84.0739102],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.095775674984045, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ebabf6ccf8ad418e8395cc2fa552bed6.bindTooltip(
+                `<div>
+                     Country: Costa Rica<br>Export: _______72,024.0 tonnes<br>Import: ____2,584,914.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e53623d5f44c4c2fae83ca8f1732ef1a = L.circleMarker(
+                [7.9897371, -5.5679458],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.1645072260497766, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_e53623d5f44c4c2fae83ca8f1732ef1a.bindTooltip(
+                `<div>
+                     Country: Cote d'Ivoire<br>Export: ____2,501,304.0 tonnes<br>Import: ____3,493,521.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_824e6063ea2c40fe81d55834d87fed8f = L.circleMarker(
+                [45.5643442, 17.0118954],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7481695870963625, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_824e6063ea2c40fe81d55834d87fed8f.bindTooltip(
+                `<div>
+                     Country: Croatia<br>Export: ____1,728,249.0 tonnes<br>Import: ____5,661,480.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c7512fdbfb624bd38f52b00e8fec0312 = L.circleMarker(
+                [23.0131338, -80.8328748],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.185916357881302, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_c7512fdbfb624bd38f52b00e8fec0312.bindTooltip(
+                `<div>
+                     Country: Cuba<br>Export: ______969,165.0 tonnes<br>Import: ____8,807,129.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_689e0eb1b4604f62ae52747331e968e7 = L.circleMarker(
+                [34.9823018, 33.1451285],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_689e0eb1b4604f62ae52747331e968e7.bindTooltip(
+                `<div>
+                     Country: Cyprus<br>Export: ____________nan tonnes<br>Import: ____2,278,468.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b5315f413ca341d8b20ddd8bba04b131 = L.circleMarker(
+                [49.8167003, 15.4749544],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.1115498147287814, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_b5315f413ca341d8b20ddd8bba04b131.bindTooltip(
+                `<div>
+                     Country: Czechia<br>Export: ____7,816,786.0 tonnes<br>Import: ___21,961,785.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_d307f37426bc459fb422f5a13dc2d7be = L.circleMarker(
+                [40.3736611, 127.0870417],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.822536130248883, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_d307f37426bc459fb422f5a13dc2d7be.bindTooltip(
+                `<div>
+                     Country: Democratic People's Republic of Korea<br>Export: ___22,559,136.0 tonnes<br>Import: ____1,793,932.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b5d139b9efd24c6c9786ee33cd09dade = L.circleMarker(
+                [-2.9814344, 23.8222636],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.819718634205488, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_b5d139b9efd24c6c9786ee33cd09dade.bindTooltip(
+                `<div>
+                     Country: Democratic Republic of the Congo<br>Export: ____1,029,425.0 tonnes<br>Import: ____1,913,486.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_88d4cbd964f548559532e997c35dfb25 = L.circleMarker(
+                [55.670249, 10.3333283],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.2732395447351628, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_88d4cbd964f548559532e997c35dfb25.bindTooltip(
+                `<div>
+                     Country: Denmark<br>Export: ___14,213,432.0 tonnes<br>Import: ___17,243,668.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_774d0b73c455492db3c5b5e8bedd6288 = L.circleMarker(
+                [19.0974031, -70.3028026],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_774d0b73c455492db3c5b5e8bedd6288.bindTooltip(
+                `<div>
+                     Country: Dominican Republic<br>Export: ____________nan tonnes<br>Import: ____6,848,847.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f81405141a414a5eb8754db0a9028b8c = L.circleMarker(
+                [-1.3397668, -79.3666965],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.366197723675814, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_f81405141a414a5eb8754db0a9028b8c.bindTooltip(
+                `<div>
+                     Country: Ecuador<br>Export: ___24,025,225.0 tonnes<br>Import: ____7,967,207.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a8f49d37e507455daf48b4c103ec5ae4 = L.circleMarker(
+                [26.2540493, 29.2675469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0371832715762603, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_a8f49d37e507455daf48b4c103ec5ae4.bindTooltip(
+                `<div>
+                     Country: Egypt<br>Export: ___11,868,536.0 tonnes<br>Import: ___16,365,189.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a4e66ac39f8c42bb891a13058f64973f = L.circleMarker(
+                [13.8000382, -88.9140683],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_a4e66ac39f8c42bb891a13058f64973f.bindTooltip(
+                `<div>
+                     Country: El Salvador<br>Export: ____________nan tonnes<br>Import: ____2,029,532.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ef33e7bbe7ec47e286acebea1fe564c4 = L.circleMarker(
+                [15.9500319, 37.9999668],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ef33e7bbe7ec47e286acebea1fe564c4.bindTooltip(
+                `<div>
+                     Country: Eritrea<br>Export: ____________nan tonnes<br>Import: ______165,775.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4d37b015b6054027b048762ca5115f4f = L.circleMarker(
+                [58.7523778, 25.3319078],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.183098861837907, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_4d37b015b6054027b048762ca5115f4f.bindTooltip(
+                `<div>
+                     Country: Estonia<br>Export: ____1,245,036.0 tonnes<br>Import: ____2,078,426.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_60152175408548d79de09a8aa55cdb97 = L.circleMarker(
+                [10.2116702, 38.6521203],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_60152175408548d79de09a8aa55cdb97.bindTooltip(
+                `<div>
+                     Country: Ethiopia<br>Export: ____________nan tonnes<br>Import: ____3,979,035.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f8bbf2cf09c9437ab4d84e3e64ac12e6 = L.circleMarker(
+                [63.2467777, 25.9209164],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.366197723675814, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_f8bbf2cf09c9437ab4d84e3e64ac12e6.bindTooltip(
+                `<div>
+                     Country: Finland<br>Export: ____7,437,090.0 tonnes<br>Import: ___22,097,054.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b9a839a9dcdc44e78b8e8f5ec3a7c0b4 = L.circleMarker(
+                [46.603354, 1.8883335],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.785352858672622, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_b9a839a9dcdc44e78b8e8f5ec3a7c0b4.bindTooltip(
+                `<div>
+                     Country: France<br>Export: ___25,773,399.0 tonnes<br>Import: __141,343,719.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7c4f2756137e4d419341986c0049eb8e = L.circleMarker(
+                [-0.8999695, 11.6899699],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.077184039195917, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_7c4f2756137e4d419341986c0049eb8e.bindTooltip(
+                `<div>
+                     Country: Gabon<br>Export: ___10,699,232.0 tonnes<br>Import: ______724,711.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_82ac8400d025482aa712eb8c03d54716 = L.circleMarker(
+                [32.3293809, -83.1137366],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.223099629457563, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_82ac8400d025482aa712eb8c03d54716.bindTooltip(
+                `<div>
+                     Country: Georgia<br>Export: _______54,868.0 tonnes<br>Import: ____3,074,864.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b3318ef8230c4a95903a52a388589791 = L.circleMarker(
+                [51.0834196, 10.4234469],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.785352858672622, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_b3318ef8230c4a95903a52a388589791.bindTooltip(
+                `<div>
+                     Country: Germany<br>Export: ___48,648,438.0 tonnes<br>Import: __261,679,488.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c1b38e8208864e8e980535241838d06e = L.circleMarker(
+                [8.0300284, -1.0800271],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.400563499208679, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_c1b38e8208864e8e980535241838d06e.bindTooltip(
+                `<div>
+                     Country: Ghana<br>Export: ____6,642,371.0 tonnes<br>Import: ____5,361,995.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b4f75658e5e84e58a9fee87a4e53f200 = L.circleMarker(
+                [38.9953683, 21.9877132],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.074366543152521, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_b4f75658e5e84e58a9fee87a4e53f200.bindTooltip(
+                `<div>
+                     Country: Greece<br>Export: ___17,969,757.0 tonnes<br>Import: ___34,661,490.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3266b0d9f80941f1ab67fc6c7332b253 = L.circleMarker(
+                [15.6356088, -89.8988087],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.567888221301851, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_3266b0d9f80941f1ab67fc6c7332b253.bindTooltip(
+                `<div>
+                     Country: Guatemala<br>Export: ______639,729.0 tonnes<br>Import: ____7,080,761.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_998e60c9911547dabe904b95e4434147 = L.circleMarker(
+                [19.1399952, -72.3570972],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_998e60c9911547dabe904b95e4434147.bindTooltip(
+                `<div>
+                     Country: Haiti<br>Export: ____________nan tonnes<br>Import: ______981,136.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1adae79252664c5190d905c3edace8f3 = L.circleMarker(
+                [15.2572432, -86.0755145],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.549296585513721, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_1adae79252664c5190d905c3edace8f3.bindTooltip(
+                `<div>
+                     Country: Honduras<br>Export: ______499,482.0 tonnes<br>Import: ____3,430,718.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_723c05743ef14ffd9d601d31e416dbaa = L.circleMarker(
+                [47.1817585, 19.5060937],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3847893594639435, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_723c05743ef14ffd9d601d31e416dbaa.bindTooltip(
+                `<div>
+                     Country: Hungary<br>Export: ____4,120,413.0 tonnes<br>Import: ___15,473,159.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_94bb52a2353b4940944d4d6efed27779 = L.circleMarker(
+                [64.9841821, -18.1059013],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_94bb52a2353b4940944d4d6efed27779.bindTooltip(
+                `<div>
+                     Country: Iceland<br>Export: ____________nan tonnes<br>Import: ______891,764.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2065e61cacf643a899afe393b5995095 = L.circleMarker(
+                [22.3511148, 78.6677428],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.294648676566688, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_2065e61cacf643a899afe393b5995095.bindTooltip(
+                `<div>
+                     Country: India<br>Export: ___80,901,850.0 tonnes<br>Import: __510,981,087.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6e3ba8bc48c5465889c3f90b4cc2d805 = L.circleMarker(
+                [-2.4833826, 117.8902853],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.676620539987237, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_6e3ba8bc48c5465889c3f90b4cc2d805.bindTooltip(
+                `<div>
+                     Country: Indonesia<br>Export: __463,265,878.0 tonnes<br>Import: ___61,698,907.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_13cd6f073c03462fac5fbdac562486f3 = L.circleMarker(
+                [32.6475314, 54.5643516],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.803944494460753, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_13cd6f073c03462fac5fbdac562486f3.bindTooltip(
+                `<div>
+                     Country: Iran (Islamic Republic of)<br>Export: ___71,907,581.0 tonnes<br>Import: ____9,212,508.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ffa4badc7af144c3a0a905fa4b29e4fd = L.circleMarker(
+                [33.0955793, 44.1749775],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.803944494460753, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ffa4badc7af144c3a0a905fa4b29e4fd.bindTooltip(
+                `<div>
+                     Country: Iraq<br>Export: __131,649,332.0 tonnes<br>Import: ___16,977,254.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e86f00bd057840ff8f8233b6a0024400 = L.circleMarker(
+                [52.865196, -7.9794599],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.803944494460753, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_e86f00bd057840ff8f8233b6a0024400.bindTooltip(
+                `<div>
+                     Country: Ireland<br>Export: ____1,803,379.0 tonnes<br>Import: ___14,195,834.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ffdd070e27dd493aae0764becb93deb7 = L.circleMarker(
+                [31.5313113, 34.8667654],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3847893594639435, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ffdd070e27dd493aae0764becb93deb7.bindTooltip(
+                `<div>
+                     Country: Israel<br>Export: ____7,590,886.0 tonnes<br>Import: ___28,205,671.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_af0b731870cc405bb1bbde0138451738 = L.circleMarker(
+                [42.6384261, 12.674297],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.276057040778557, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_af0b731870cc405bb1bbde0138451738.bindTooltip(
+                `<div>
+                     Country: Italy<br>Export: ___28,837,366.0 tonnes<br>Import: __138,068,799.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3605f3924166498fb8f9818fb80a0ee5 = L.circleMarker(
+                [18.1152958, -77.1598454610168],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.96845172051053, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_3605f3924166498fb8f9818fb80a0ee5.bindTooltip(
+                `<div>
+                     Country: Jamaica<br>Export: _______72,819.0 tonnes<br>Import: ____2,510,889.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_447ad6de2f4f4aaa919c7d00d0fd6804 = L.circleMarker(
+                [36.5748441, 139.2394179],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.713803811563498, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_447ad6de2f4f4aaa919c7d00d0fd6804.bindTooltip(
+                `<div>
+                     Country: Japan<br>Export: ___20,296,307.0 tonnes<br>Import: __491,442,573.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87727ad81e534e9e99ff9b1766edc71e = L.circleMarker(
+                [31.1667049, 36.941628],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_87727ad81e534e9e99ff9b1766edc71e.bindTooltip(
+                `<div>
+                     Country: Jordan<br>Export: ____________nan tonnes<br>Import: ____8,456,402.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e5597fcc9f0b412d9805841b04524d08 = L.circleMarker(
+                [47.2286086, 65.2093197],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.459155902616464, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_e5597fcc9f0b412d9805841b04524d08.bindTooltip(
+                `<div>
+                     Country: Kazakhstan<br>Export: __117,103,856.0 tonnes<br>Import: ____6,050,242.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_1aef97139da8481fa913dfe847b92986 = L.circleMarker(
+                [1.4419683, 38.4313975],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_1aef97139da8481fa913dfe847b92986.bindTooltip(
+                `<div>
+                     Country: Kenya<br>Export: ____________nan tonnes<br>Import: ____5,007,518.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_61754f0eb0974ecd85e3b6d92f7188fd = L.circleMarker(
+                [29.2733964, 47.4979476],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.223099629457563, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_61754f0eb0974ecd85e3b6d92f7188fd.bindTooltip(
+                `<div>
+                     Country: Kuwait<br>Export: __139,770,161.0 tonnes<br>Import: ____2,775,549.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_89cc86ce433c4d9cb5a20388558589c3 = L.circleMarker(
+                [41.5089324, 74.724091],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.459155902616464, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_89cc86ce433c4d9cb5a20388558589c3.bindTooltip(
+                `<div>
+                     Country: Kyrgyzstan<br>Export: ______174,064.0 tonnes<br>Import: ____3,297,321.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ec752ec0345548b18d2db56397e2f358 = L.circleMarker(
+                [56.8406494, 24.7537645],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.130141450516911, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ec752ec0345548b18d2db56397e2f358.bindTooltip(
+                `<div>
+                     Country: Latvia<br>Export: ____1,005,092.0 tonnes<br>Import: ____3,569,066.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b6a8d1bc7cfe4ea19dabd6e2a0c9f28e = L.circleMarker(
+                [33.8750629, 35.843409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_b6a8d1bc7cfe4ea19dabd6e2a0c9f28e.bindTooltip(
+                `<div>
+                     Country: Lebanon<br>Export: ____________nan tonnes<br>Import: ____9,104,291.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_337ded65ec4c449db68d6d972b3d5d01 = L.circleMarker(
+                [26.8234472, 18.1236723],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.710986315520102, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_337ded65ec4c449db68d6d972b3d5d01.bindTooltip(
+                `<div>
+                     Country: Libya<br>Export: ___19,537,370.0 tonnes<br>Import: ____9,005,071.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c88ed5caf7e5482ea5caccfc711e750a = L.circleMarker(
+                [55.3500003, 23.7499997],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.673803043943842, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_c88ed5caf7e5482ea5caccfc711e750a.bindTooltip(
+                `<div>
+                     Country: Lithuania<br>Export: ____7,819,574.0 tonnes<br>Import: ___12,015,235.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_76f1ebee09194ef1a71a1b2d03713058 = L.circleMarker(
+                [49.8158683, 6.1296751],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_76f1ebee09194ef1a71a1b2d03713058.bindTooltip(
+                `<div>
+                     Country: Luxembourg<br>Export: ____________nan tonnes<br>Import: ____3,274,967.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_adca549ea5cf4ba9a307ce483461ee32 = L.circleMarker(
+                [4.5693754, 102.2656823],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.0371832715762603, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_adca549ea5cf4ba9a307ce483461ee32.bindTooltip(
+                `<div>
+                     Country: Malaysia<br>Export: ___48,591,484.0 tonnes<br>Import: ___66,568,331.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ddd460160bc6458d96004e6438c1e15c = L.circleMarker(
+                [35.8885993, 14.4476911],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.803944494460753, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ddd460160bc6458d96004e6438c1e15c.bindTooltip(
+                `<div>
+                     Country: Malta<br>Export: ______325,571.0 tonnes<br>Import: ____2,490,214.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_3a3e1e2cf9a44b71b5934d776f169fbf = L.circleMarker(
+                [-20.2759451, 57.5703566],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_3a3e1e2cf9a44b71b5934d776f169fbf.bindTooltip(
+                `<div>
+                     Country: Mauritius<br>Export: ____________nan tonnes<br>Import: ____2,125,825.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f0946c612c03447982d7ee85a15c2017 = L.circleMarker(
+                [19.4326296, -99.1331785],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 0.7639437268410977, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_f0946c612c03447982d7ee85a15c2017.bindTooltip(
+                `<div>
+                     Country: Mexico<br>Export: ___65,212,578.0 tonnes<br>Import: ___73,359,319.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_08a9a16bfdd74df19cbe8f4a55603e1e = L.circleMarker(
+                [46.8250388, 103.8499736],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.949860084722399, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_08a9a16bfdd74df19cbe8f4a55603e1e.bindTooltip(
+                `<div>
+                     Country: Mongolia<br>Export: ___17,391,373.0 tonnes<br>Import: ____1,305,154.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4c18f7b93cb747a388c5b14e7c8c01da = L.circleMarker(
+                [42.9868853, 19.5180992],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.658028904199107, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_4c18f7b93cb747a388c5b14e7c8c01da.bindTooltip(
+                `<div>
+                     Country: Montenegro<br>Export: _______46,776.0 tonnes<br>Import: ______245,200.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8c5e83faf2804cfeb822e22e70da89a0 = L.circleMarker(
+                [31.1728205, -7.3362482],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.713803811563498, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_8c5e83faf2804cfeb822e22e70da89a0.bindTooltip(
+                `<div>
+                     Country: Morocco<br>Export: ____1,044,993.0 tonnes<br>Import: ___24,106,577.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8d2d5eb70c2f433eb4c46abc9a97f4f3 = L.circleMarker(
+                [-19.302233, 34.9144977],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.549296585513721, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_8d2d5eb70c2f433eb4c46abc9a97f4f3.bindTooltip(
+                `<div>
+                     Country: Mozambique<br>Export: ____8,051,937.0 tonnes<br>Import: ____1,146,100.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4dc6b488deff4fbea5c635d1d13d65fd = L.circleMarker(
+                [17.1750495, 95.9999652],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.7481695870963625, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_4dc6b488deff4fbea5c635d1d13d65fd.bindTooltip(
+                `<div>
+                     Country: Myanmar<br>Export: ___11,800,143.0 tonnes<br>Import: ____3,616,159.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f4201222a3294c969cd86eddd595fe0a = L.circleMarker(
+                [-23.2335499, 17.3231107],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.60507149287811, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_f4201222a3294c969cd86eddd595fe0a.bindTooltip(
+                `<div>
+                     Country: Namibia<br>Export: ________4,788.0 tonnes<br>Import: ____1,347,046.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_6e0fe8ec8b2c4bada140b9272bed2bc9 = L.circleMarker(
+                [28.1083929, 84.0917139],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_6e0fe8ec8b2c4bada140b9272bed2bc9.bindTooltip(
+                `<div>
+                     Country: Nepal<br>Export: ____________nan tonnes<br>Import: ____2,028,504.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_27decf01fd70408393504742175af670 = L.circleMarker(
+                [52.5001698, 5.7480821],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.6552114081557117, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_27decf01fd70408393504742175af670.bindTooltip(
+                `<div>
+                     Country: Netherlands<br>Export: __187,580,348.0 tonnes<br>Import: __244,178,389.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_889c59c97a8b4cb0ae5fd755e3b2b900 = L.circleMarker(
+                [-41.5000831, 172.8344077],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.965634224467134, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_889c59c97a8b4cb0ae5fd755e3b2b900.bindTooltip(
+                `<div>
+                     Country: New Zealand<br>Export: ____3,513,500.0 tonnes<br>Import: ____8,006,650.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f756c8c3a99e407eadb8d24041d14720 = L.circleMarker(
+                [12.6090157, -85.2936911],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.732395447351628, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_f756c8c3a99e407eadb8d24041d14720.bindTooltip(
+                `<div>
+                     Country: Nicaragua<br>Export: ________3,279.0 tonnes<br>Import: ____1,559,011.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e7a57cf22b194e5c930c2a580fff7ec7 = L.circleMarker(
+                [17.7356214, 9.3238432],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.51211331393746, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_e7a57cf22b194e5c930c2a580fff7ec7.bindTooltip(
+                `<div>
+                     Country: Niger<br>Export: ______455,500.0 tonnes<br>Import: ______116,071.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_03a4016238ee4902a3c4f164700ba3e2 = L.circleMarker(
+                [9.6000359, 7.9999721],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.204507993669433, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_03a4016238ee4902a3c4f164700ba3e2.bindTooltip(
+                `<div>
+                     Country: Nigeria<br>Export: __131,478,710.0 tonnes<br>Import: ____8,682,318.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_66f17b72429a4657aca1b6496e870f79 = L.circleMarker(
+                [41.6171214, 21.7168387],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.676620539987237, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_66f17b72429a4657aca1b6496e870f79.bindTooltip(
+                `<div>
+                     Country: North Macedonia<br>Export: ______197,346.0 tonnes<br>Import: ____1,456,975.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_403abf9f7bdd4cef89192e26ec7e1ab6 = L.circleMarker(
+                [64.5731537, 11.52803643954819],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.58647985708998, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_403abf9f7bdd4cef89192e26ec7e1ab6.bindTooltip(
+                `<div>
+                     Country: Norway<br>Export: __157,775,634.0 tonnes<br>Import: ____7,644,371.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7f8aac92d35a44ed8dcf541f84fe1b43 = L.circleMarker(
+                [21.0000287, 57.0036901],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.58647985708998, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_7f8aac92d35a44ed8dcf541f84fe1b43.bindTooltip(
+                `<div>
+                     Country: Oman<br>Export: ___46,877,484.0 tonnes<br>Import: ____2,220,260.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7d22b2a21a8f43faa9252133f91d8f80 = L.circleMarker(
+                [30.3308401, 71.247499],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.841127766037014, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_7d22b2a21a8f43faa9252133f91d8f80.bindTooltip(
+                `<div>
+                     Country: Pakistan<br>Export: ______968,129.0 tonnes<br>Import: ___27,163,789.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_414515651a8c4c11a29ae68068117145 = L.circleMarker(
+                [8.559559, -81.1308434],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_414515651a8c4c11a29ae68068117145.bindTooltip(
+                `<div>
+                     Country: Panama<br>Export: ____________nan tonnes<br>Import: ____7,226,163.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_a317230fc3b044348dd52c28ec9b0099 = L.circleMarker(
+                [-23.3165935, -58.1693445],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_a317230fc3b044348dd52c28ec9b0099.bindTooltip(
+                `<div>
+                     Country: Paraguay<br>Export: ____________nan tonnes<br>Import: ____1,864,214.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_41fda76ae45d484eb9f5f65cf496734f = L.circleMarker(
+                [-6.8699697, -75.0458515],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.0185916357881302, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_41fda76ae45d484eb9f5f65cf496734f.bindTooltip(
+                `<div>
+                     Country: Peru<br>Export: ____9,086,668.0 tonnes<br>Import: ____7,699,111.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2ae32d71605c4af09e130e7dcaab8a33 = L.circleMarker(
+                [12.7503486, 122.7312101],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.421972631040203, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_2ae32d71605c4af09e130e7dcaab8a33.bindTooltip(
+                `<div>
+                     Country: Philippines<br>Export: ____5,255,136.0 tonnes<br>Import: ___34,760,850.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_628769355d9f4bb09698a6df70f103df = L.circleMarker(
+                [52.215933, 19.134422],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8383102699936185, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_628769355d9f4bb09698a6df70f103df.bindTooltip(
+                `<div>
+                     Country: Poland<br>Export: ___23,672,214.0 tonnes<br>Import: ___52,194,963.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4496c3e18cf44e88a101e18dadb704d9 = L.circleMarker(
+                [40.0332629, -7.8896263],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.130141450516911, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_4496c3e18cf44e88a101e18dadb704d9.bindTooltip(
+                `<div>
+                     Country: Portugal<br>Export: ____7,428,086.0 tonnes<br>Import: ___26,576,124.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_14e692d1566e4f48b120ff45c1b8b267 = L.circleMarker(
+                [25.3336984, 51.2295295],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.732395447351628, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_14e692d1566e4f48b120ff45c1b8b267.bindTooltip(
+                `<div>
+                     Country: Qatar<br>Export: __180,312,267.0 tonnes<br>Import: _______30,102.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_cfa529e74a6f4f899cfa21d470973895 = L.circleMarker(
+                [36.638392, 127.6961188],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.91267681314614, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_cfa529e74a6f4f899cfa21d470973895.bindTooltip(
+                `<div>
+                     Country: Republic of Korea<br>Export: ___65,002,857.0 tonnes<br>Import: __365,354,246.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_87022b70725645b5b8e6371201488afb = L.circleMarker(
+                [47.2879608, 28.5670941],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.477747538404595, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_87022b70725645b5b8e6371201488afb.bindTooltip(
+                `<div>
+                     Country: Republic of Moldova<br>Export: _______21,527.0 tonnes<br>Import: ____2,826,256.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ffab880aab0f4e478c2766dfdf040ed5 = L.circleMarker(
+                [45.9852129, 24.6859225],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.074366543152521, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ffab880aab0f4e478c2766dfdf040ed5.bindTooltip(
+                `<div>
+                     Country: Romania<br>Export: ____5,163,891.0 tonnes<br>Import: ___10,074,439.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_db28bf29ec7e463da4d91fa8add8c3dd = L.circleMarker(
+                [64.6863136, 97.7453061],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.459155902616464, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_db28bf29ec7e463da4d91fa8add8c3dd.bindTooltip(
+                `<div>
+                     Country: Russian Federation<br>Export: __683,723,486.0 tonnes<br>Import: ___36,620,373.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b1c7676ac2724be7b62d1214b010f582 = L.circleMarker(
+                [25.6242618, 42.3528328],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.204507993669433, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_b1c7676ac2724be7b62d1214b010f582.bindTooltip(
+                `<div>
+                     Country: Saudi Arabia<br>Export: __431,787,539.0 tonnes<br>Import: ___28,248,950.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_7a35b64207274c87b87626df58ae966b = L.circleMarker(
+                [14.4750607, -14.4529612],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.459155902616464, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_7a35b64207274c87b87626df58ae966b.bindTooltip(
+                `<div>
+                     Country: Senegal<br>Export: ______171,229.0 tonnes<br>Import: ____3,356,215.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_83597ca5d53e4525ade65ec5ab2c4ff7 = L.circleMarker(
+                [44.024322850000004, 21.07657433209902],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.894085177358009, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_83597ca5d53e4525ade65ec5ab2c4ff7.bindTooltip(
+                `<div>
+                     Country: Serbia<br>Export: ______832,800.0 tonnes<br>Import: ____3,498,853.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5a4d82fc1c4049e292265af5d7a06608 = L.circleMarker(
+                [1.357107, 103.8194992],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.819718634205488, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_5a4d82fc1c4049e292265af5d7a06608.bindTooltip(
+                `<div>
+                     Country: Singapore<br>Export: ___95,662,454.0 tonnes<br>Import: __178,928,681.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4bfbcd61698247e5bae827c3ffa7966d = L.circleMarker(
+                [48.7411522, 19.4528646],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.002817496043395, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_4bfbcd61698247e5bae827c3ffa7966d.bindTooltip(
+                `<div>
+                     Country: Slovakia<br>Export: ____4,211,759.0 tonnes<br>Import: ___14,422,492.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_59b8d16ecf1b442baa0aeaaf60039306 = L.circleMarker(
+                [45.8133113, 14.4808369],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.856901905781749, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_59b8d16ecf1b442baa0aeaaf60039306.bindTooltip(
+                `<div>
+                     Country: Slovenia<br>Export: ____1,913,879.0 tonnes<br>Import: ____5,194,510.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ad7a98dc9a27454197b0473d7998d86d = L.circleMarker(
+                [-28.8166236, 24.991639],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.8383102699936185, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ad7a98dc9a27454197b0473d7998d86d.bindTooltip(
+                `<div>
+                     Country: South Africa<br>Export: ___80,631,143.0 tonnes<br>Import: ___36,083,714.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f9b525211bef413787e9a06a61d74e96 = L.circleMarker(
+                [7.8699431, 29.6667897],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.841127766037014, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_f9b525211bef413787e9a06a61d74e96.bindTooltip(
+                `<div>
+                     Country: South Sudan<br>Export: ___17,075,000.0 tonnes<br>Import: ______575,000.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_c408405453b54d979c8f84cba5e1ebc6 = L.circleMarker(
+                [39.3262345, -4.8380649],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.51211331393746, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_c408405453b54d979c8f84cba5e1ebc6.bindTooltip(
+                `<div>
+                     Country: Spain<br>Export: ___32,359,501.0 tonnes<br>Import: __126,642,081.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_865f66b54b1844cbb5bd4f0f5958f10a = L.circleMarker(
+                [7.5554942, 80.7137847],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_865f66b54b1844cbb5bd4f0f5958f10a.bindTooltip(
+                `<div>
+                     Country: Sri Lanka<br>Export: ____________nan tonnes<br>Import: ____7,080,750.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9a71f8183f864bf099fdd73052cf4346 = L.circleMarker(
+                [14.5844444, 29.4917691],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 2.673803043943842, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_9a71f8183f864bf099fdd73052cf4346.bindTooltip(
+                `<div>
+                     Country: Sudan<br>Export: ____1,488,000.0 tonnes<br>Import: ______968,000.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_dc8277b022f9461a87afdf896675585c = L.circleMarker(
+                [4.1413025, -56.0771187],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.3104228163114233, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_dc8277b022f9461a87afdf896675585c.bindTooltip(
+                `<div>
+                     Country: Suriname<br>Export: ______859,754.0 tonnes<br>Import: ______508,636.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b245771b3b8d42488cca025600e2b802 = L.circleMarker(
+                [59.6749712, 14.5208584],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 4.583662361046586, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_b245771b3b8d42488cca025600e2b802.bindTooltip(
+                `<div>
+                     Country: Sweden<br>Export: ___14,926,314.0 tonnes<br>Import: ___31,420,662.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2fc6e449bf3c42c99b3d255e79065542 = L.circleMarker(
+                [46.7985624, 8.2319736],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.96845172051053, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_2fc6e449bf3c42c99b3d255e79065542.bindTooltip(
+                `<div>
+                     Country: Switzerland<br>Export: ______430,464.0 tonnes<br>Import: ___13,121,485.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_127a08c4947341189b5fcf1ae240a478 = L.circleMarker(
+                [34.6401861, 39.0494106],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_127a08c4947341189b5fcf1ae240a478.bindTooltip(
+                `<div>
+                     Country: Syrian Arab Republic<br>Export: ____________nan tonnes<br>Import: ____7,115,315.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_47cb2bbdffd34a6d9d2e1f340e1053f9 = L.circleMarker(
+                [38.6281733, 70.8156541],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.60507149287811, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_47cb2bbdffd34a6d9d2e1f340e1053f9.bindTooltip(
+                `<div>
+                     Country: Tajikistan<br>Export: ________3,400.0 tonnes<br>Import: ____1,187,612.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_2144085881f64de782eab833bc777a59 = L.circleMarker(
+                [14.8971921, 100.83273],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.167324722093172, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_2144085881f64de782eab833bc777a59.bindTooltip(
+                `<div>
+                     Country: Thailand<br>Export: ___14,035,237.0 tonnes<br>Import: ___86,726,372.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_5d62b8f1dd174125aa2b07dc78cfb146 = L.circleMarker(
+                [8.7800265, 1.0199765],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_5d62b8f1dd174125aa2b07dc78cfb146.bindTooltip(
+                `<div>
+                     Country: Togo<br>Export: ____________nan tonnes<br>Import: ______682,221.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_38657ebc78ba486ebf76be0c7e3316ab = L.circleMarker(
+                [10.8677845, -60.9821067],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.676620539987237, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_38657ebc78ba486ebf76be0c7e3316ab.bindTooltip(
+                `<div>
+                     Country: Trinidad and Tobago<br>Export: ___20,093,575.0 tonnes<br>Import: ____2,681,732.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e1fa0b02bf2b43d58899b0540e1cc12b = L.circleMarker(
+                [33.8439408, 9.400138],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.220282133414167, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_e1fa0b02bf2b43d58899b0540e1cc12b.bindTooltip(
+                `<div>
+                     Country: Tunisia<br>Export: ____3,108,236.0 tonnes<br>Import: ____7,427,445.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_f8878f4678f040cca2e38f696f3d477b = L.circleMarker(
+                [38.9597594, 34.9249653],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.949860084722399, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_f8878f4678f040cca2e38f696f3d477b.bindTooltip(
+                `<div>
+                     Country: Turkey<br>Export: ____9,200,013.0 tonnes<br>Import: __125,465,015.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_0ea357f728ba46b0b867866b619ce302 = L.circleMarker(
+                [39.3763807, 59.3924609],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_0ea357f728ba46b0b867866b619ce302.bindTooltip(
+                `<div>
+                     Country: Turkmenistan<br>Export: ___42,045,845.0 tonnes<br>Import: ____________nan tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_ae092fab7e4542c0840633cebc7e0ed6 = L.circleMarker(
+                [49.4871968, 31.2718321],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.331831948142948, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_ae092fab7e4542c0840633cebc7e0ed6.bindTooltip(
+                `<div>
+                     Country: Ukraine<br>Export: ____1,636,907.0 tonnes<br>Import: ___28,448,172.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_8a86d9e1a837403592ea76c0548d9330 = L.circleMarker(
+                [24.0002488, 53.9994829],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.130141450516911, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_8a86d9e1a837403592ea76c0548d9330.bindTooltip(
+                `<div>
+                     Country: United Arab Emirates<br>Export: __150,405,397.0 tonnes<br>Import: ___42,812,643.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_e1fade227cf948ad9894e7d049a02b97 = L.circleMarker(
+                [54.7023545, -3.2765753],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.4749300423611995, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_e1fade227cf948ad9894e7d049a02b97.bindTooltip(
+                `<div>
+                     Country: United Kingdom of Great Britain and Northern Ireland<br>Export: ___59,299,506.0 tonnes<br>Import: __148,337,422.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_aca5159e8c5a4f40a96cb29959ed528d = L.circleMarker(
+                [-6.5247123, 35.7878438],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_aca5159e8c5a4f40a96cb29959ed528d.bindTooltip(
+                `<div>
+                     Country: United Republic of Tanzania<br>Export: ____________nan tonnes<br>Import: ____3,328,500.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4bfca5326977496a9b3729e3cc43d4ca = L.circleMarker(
+                [39.7837304, -100.4458825],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.909859317102744, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_4bfca5326977496a9b3729e3cc43d4ca.bindTooltip(
+                `<div>
+                     Country: United States of America<br>Export: __360,855,012.0 tonnes<br>Import: __490,877,489.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_899b32b47c184cf1a0186de5b393a289 = L.circleMarker(
+                [-32.8755548, -56.0201525],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": NaN, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_899b32b47c184cf1a0186de5b393a289.bindTooltip(
+                `<div>
+                     Country: Uruguay<br>Export: ____________nan tonnes<br>Import: ____2,677,591.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_972e95f294704919b4e9e8641ead56f5 = L.circleMarker(
+                [41.32373, 63.9528098],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.732395447351628, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_972e95f294704919b4e9e8641ead56f5.bindTooltip(
+                `<div>
+                     Country: Uzbekistan<br>Export: ___11,169,139.0 tonnes<br>Import: _______21,593.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_b92ce196d40b4f4484d0ed8135beb47c = L.circleMarker(
+                [8.0018709, -66.1109318],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.223099629457563, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_b92ce196d40b4f4484d0ed8135beb47c.bindTooltip(
+                `<div>
+                     Country: Venezuela (Bolivarian Republic of)<br>Export: __104,990,361.0 tonnes<br>Import: ____2,369,282.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_692c27c7e5834143b37350bb7ec68d32 = L.circleMarker(
+                [13.2904027, 108.4265113],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 3.5650707252584555, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_692c27c7e5834143b37350bb7ec68d32.bindTooltip(
+                `<div>
+                     Country: Viet Nam<br>Export: ___10,826,521.0 tonnes<br>Import: ___19,182,425.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_4909f243750f4801ba08eae4506943f4 = L.circleMarker(
+                [16.3471243, 47.8915271],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1.1459155902616465, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_4909f243750f4801ba08eae4506943f4.bindTooltip(
+                `<div>
+                     Country: Yemen<br>Export: ____3,918,722.0 tonnes<br>Import: ____4,725,951.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_9c773ddd34ed4b1eae51be9fd99d3506 = L.circleMarker(
+                [-14.5186239, 27.5599164],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.96845172051053, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_9c773ddd34ed4b1eae51be9fd99d3506.bindTooltip(
+                `<div>
+                     Country: Zambia<br>Export: _______31,781.0 tonnes<br>Import: ____1,035,836.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_marker_98787a20c96a40e1a3bd2d6504315cea = L.circleMarker(
+                [-18.4554963, 29.7468414],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.294648676566688, "stroke": true, "weight": 3}
+            ).addTo(feature_group_0bbba377b01e419aab9db045812a7963);
+        
+    
+            circle_marker_98787a20c96a40e1a3bd2d6504315cea.bindTooltip(
+                `<div>
+                     Country: Zimbabwe<br>Export: ______201,761.0 tonnes<br>Import: ____1,317,850.0 tonnes
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
